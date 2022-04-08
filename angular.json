@@ -4,6 +4,9 @@
     "launcher": "libs/launcher",
     "shared-ui": "libs/shared-ui",
     "static-host": "apps/static-host",
-    "static-host-e2e": "apps/static-host-e2e"
+    "static-host-e2e": "apps/static-host-e2e",
+    "todo": "apps/todo",
+    "todo-e2e": "apps/todo-e2e",
+    "todo-feature": "libs/todo/feature"
   }
 }

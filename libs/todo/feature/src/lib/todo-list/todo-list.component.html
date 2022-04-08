@@ -1,0 +1,15 @@
+<div class="p-2 m-2">
+  <input
+    type="text"
+    placeholder="Enter todo item"
+    #todoInput
+    (keydown.enter)="addTodo('' + todoInput.value); todoInput.value = ''"
+  />
+</div>
+<div *ngFor="let todo of todos; let i = index">
+  <nx-ng-mfe-todo-item
+    class="m-2"
+    [todo]="todo.todo"
+    (toggled)="setTodoComplete(i)"
+  ></nx-ng-mfe-todo-item>
+</div>

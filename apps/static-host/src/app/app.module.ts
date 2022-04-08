@@ -19,6 +19,11 @@ import { LauncherModule } from '@nx-ng-mfe/launcher';
               (m) => m.DefaultPageComponentModule
             ),
         },
+        {
+          path: 'todo',
+          loadChildren: () =>
+            import('todo/Module').then((m) => m.RemoteEntryModule),
+        },
       ],
       { initialNavigation: 'enabledBlocking' }
     ),
