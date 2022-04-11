@@ -1,0 +1,15 @@
+<div class="w-screen mt-2 flex justify-center items-center">
+  <nx-ng-mfe-card>
+    <textarea
+      class="border-0 bg-transparent w-80"
+      #newNote
+      (blur)="addNote(newNote.value); newNote.value = ''"
+      placeholder="Enter a note..."
+    ></textarea>
+  </nx-ng-mfe-card>
+</div>
+
+<nx-ng-mfe-notes-list
+  [notes]="notes$ | async"
+  (deleteNote)="deleteNote($event)"
+></nx-ng-mfe-notes-list>

@@ -24,6 +24,11 @@ import { LauncherModule } from '@nx-ng-mfe/launcher';
           loadChildren: () =>
             import('todo/Module').then((m) => m.RemoteEntryModule),
         },
+        {
+          path: 'notes',
+          loadChildren: () =>
+            import('notes/Module').then((m) => m.RemoteEntryModule),
+        },
       ],
       { initialNavigation: 'enabledBlocking' }
     ),

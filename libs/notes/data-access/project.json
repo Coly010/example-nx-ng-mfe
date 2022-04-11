@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/notes/data-access",
+  "sourceRoot": "libs/notes/data-access/src",
+  "prefix": "nx-ng-mfe",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/notes/data-access"],
+      "options": {
+        "jestConfig": "libs/notes/data-access/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/notes/data-access/src/**/*.ts",
+          "libs/notes/data-access/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

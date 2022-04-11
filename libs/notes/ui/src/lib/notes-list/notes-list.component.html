@@ -1,0 +1,17 @@
+<div class="p-2 w-screen flex">
+  <div *ngFor="let note of notes?.entries(); trackBy: trackById" class="mx-2">
+    <div class="relative">
+      <nx-ng-mfe-note-item
+        [created]="note[0]"
+        [note]="note[1]"
+      ></nx-ng-mfe-note-item>
+      <button
+        (click)="delete(note[0])"
+        type="button"
+        class="absolute -right-1 -top-1 rounded-full p-2 w-5 h-5 flex items-center justify-center text-xl bg-red-200 text-red-800 drop-shadow-md hover:scale-125 transition-transform"
+      >
+        &times;
+      </button>
+    </div>
+  </div>
+</div>

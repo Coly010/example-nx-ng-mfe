@@ -1,4 +1,4 @@
 module.exports = {
   name: 'static-host',
-  remotes: ['todo'],
+  remotes: ['todo', 'notes'],
 };

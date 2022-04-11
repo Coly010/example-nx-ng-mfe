@@ -2,6 +2,11 @@
   "version": 2,
   "projects": {
     "launcher": "libs/launcher",
+    "notes": "apps/notes",
+    "notes-data-access": "libs/notes/data-access",
+    "notes-e2e": "apps/notes-e2e",
+    "notes-feature": "libs/notes/feature",
+    "notes-ui": "libs/notes/ui",
     "shared-ui": "libs/shared-ui",
     "static-host": "apps/static-host",
     "static-host-e2e": "apps/static-host-e2e",

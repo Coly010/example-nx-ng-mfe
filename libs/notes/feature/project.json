@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/notes/feature",
+  "sourceRoot": "libs/notes/feature/src",
+  "prefix": "nx-ng-mfe",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/notes/feature"],
+      "options": {
+        "jestConfig": "libs/notes/feature/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/notes/feature/src/**/*.ts",
+          "libs/notes/feature/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
