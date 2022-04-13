@@ -1,3 +1,7 @@
+<h2 class="text-xl" *ngIf="user$ | async as user">
+  Welcome back, {{ user.name }}!
+</h2>
+
 <div class="w-screen mt-2 flex justify-center items-center">
   <nx-ng-mfe-card>
     <textarea

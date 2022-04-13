@@ -16,10 +16,14 @@
     "baseUrl": ".",
     "paths": {
       "@nx-ng-mfe/launcher": ["libs/launcher/src/index.ts"],
+      "@nx-ng-mfe/login/feature": ["libs/login/feature/src/index.ts"],
       "@nx-ng-mfe/notes/data-access": ["libs/notes/data-access/src/index.ts"],
       "@nx-ng-mfe/notes/feature": ["libs/notes/feature/src/index.ts"],
       "@nx-ng-mfe/notes/ui": ["libs/notes/ui/src/index.ts"],
       "@nx-ng-mfe/shared-ui": ["libs/shared-ui/src/index.ts"],
+      "@nx-ng-mfe/shared/data-access/auth": [
+        "libs/shared/data-access/auth/src/index.ts"
+      ],
       "@nx-ng-mfe/todo/feature": ["libs/todo/feature/src/index.ts"]
     }
   },

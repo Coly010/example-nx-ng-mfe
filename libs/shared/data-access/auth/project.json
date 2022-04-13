@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/data-access/auth",
+  "sourceRoot": "libs/shared/data-access/auth/src",
+  "prefix": "nx-ng-mfe",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/data-access/auth"],
+      "options": {
+        "jestConfig": "libs/shared/data-access/auth/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/data-access/auth/src/**/*.ts",
+          "libs/shared/data-access/auth/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

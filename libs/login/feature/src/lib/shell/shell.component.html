@@ -1,0 +1,32 @@
+<div class="w-screen mt-10 flex justify-center items-center">
+  <nx-ng-mfe-card
+    ><h2 class="text-xl font-bold mb-4">Login</h2>
+    <form (ngSubmit)="login()" class="flex flex-col">
+      <input
+        type="text"
+        [(ngModel)]="name"
+        placeholder="Name"
+        name="name"
+        class="rounded-lg mb-2"
+      /><br />
+      <input
+        type="password"
+        [(ngModel)]="password"
+        placeholder="Password"
+        name="password"
+        class="rounded-lg mb-2"
+      />
+      <br />
+      <ng-container *ngIf="error">
+        <span class="text-red-400">{{ error }}</span
+        ><br />
+      </ng-container>
+      <button
+        type="submit"
+        class="mx-auto py-2 px-4 rounded-lg border-2 border-purple-nx-base font-semibold text-purple-nx-base hover:bg-purple-nx-base hover:text-white transition-colors"
+      >
+        Login
+      </button>
+    </form>
+  </nx-ng-mfe-card>
+</div>

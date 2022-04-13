@@ -3,6 +3,15 @@
     <h2 class="text-lg font-semibold text-white cursor-pointer" routerLink="">
       Nx Ng MFE Launcher
     </h2>
-    <nx-ng-mfe-button>Login</nx-ng-mfe-button>
+    <nx-ng-mfe-button
+      *ngIf="(isLoggedIn$ | async) === false; else loggedIn"
+      routerLink="login"
+      >Login</nx-ng-mfe-button
+    >
+    <ng-template #loggedIn
+      ><span class="font-bold text-white" *ngIf="user$ | async as user"
+        >Welcome, {{ user.name }}!</span
+      ></ng-template
+    >
   </div>
 </nav>
