@@ -72,6 +72,23 @@
         "publicHost": "http://localhost:4203"
       }
     },
+
+    "serve-static": {
+      "executor": "@nrwl/angular:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "login:build",
+        "port": 4203
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "login:build:development"
+        },
+        "production": {
+          "buildTarget": "login:build:production"
+        }
+      }
+    },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
@@ -91,7 +108,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/login"],
       "options": {
-        "jestConfig": "apps/login/jest.config.js",
+        "jestConfig": "apps/login/jest.config.ts",
         "passWithNoTests": true
       }
     }

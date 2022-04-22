@@ -72,6 +72,23 @@
         "publicHost": "http://localhost:4201"
       }
     },
+
+    "serve-static": {
+      "executor": "@nrwl/angular:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "todo:build",
+        "port": 4201
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "todo:build:development"
+        },
+        "production": {
+          "buildTarget": "todo:build:production"
+        }
+      }
+    },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
@@ -88,7 +105,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/todo"],
       "options": {
-        "jestConfig": "apps/todo/jest.config.js",
+        "jestConfig": "apps/todo/jest.config.ts",
         "passWithNoTests": true
       }
     }

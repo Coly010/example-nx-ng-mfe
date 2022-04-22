@@ -60,7 +60,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@nrwl/angular:webpack-server",
+      "executor": "@nrwl/angular:module-federation-dev-server",
       "configurations": {
         "production": {
           "browserTarget": "static-host:build:production"
@@ -94,19 +94,8 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/static-host"],
       "options": {
-        "jestConfig": "apps/static-host/jest.config.js",
+        "jestConfig": "apps/static-host/jest.config.ts",
         "passWithNoTests": true
-      }
-    },
-    "serve-mfe": {
-      "executor": "@nrwl/workspace:run-commands",
-      "options": {
-        "commands": [
-          "nx serve login",
-          "nx serve notes",
-          "nx serve todo",
-          "nx serve static-host"
-        ]
       }
     }
   },

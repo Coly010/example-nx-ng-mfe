@@ -8,7 +8,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/launcher"],
       "options": {
-        "jestConfig": "libs/launcher/jest.config.js",
+        "jestConfig": "libs/launcher/jest.config.ts",
         "passWithNoTests": true
       }
     },
