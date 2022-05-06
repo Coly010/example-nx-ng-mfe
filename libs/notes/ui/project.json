@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/notes/ui",
   "sourceRoot": "libs/notes/ui/src",
   "prefix": "nx-ng-mfe",
   "targets": {

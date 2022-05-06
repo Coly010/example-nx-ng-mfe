@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/login/feature",
   "sourceRoot": "libs/login/feature/src",
   "prefix": "nx-ng-mfe",
   "targets": {

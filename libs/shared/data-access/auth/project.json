@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/shared/data-access/auth",
   "sourceRoot": "libs/shared/data-access/auth/src",
   "prefix": "nx-ng-mfe",
   "targets": {

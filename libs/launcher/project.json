@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/launcher",
   "sourceRoot": "libs/launcher/src",
   "prefix": "nx-ng-mfe",
   "targets": {

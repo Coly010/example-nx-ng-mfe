@@ -1,6 +1,5 @@
 {
   "projectType": "application",
-  "root": "apps/login",
   "sourceRoot": "apps/login/src",
   "prefix": "nx-ng-mfe",
   "targets": {
@@ -72,7 +71,6 @@
         "publicHost": "http://localhost:4203"
       }
     },
-
     "serve-static": {
       "executor": "@nrwl/angular:file-server",
       "defaultConfiguration": "development",

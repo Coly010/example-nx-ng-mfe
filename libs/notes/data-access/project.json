@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/notes/data-access",
   "sourceRoot": "libs/notes/data-access/src",
   "prefix": "nx-ng-mfe",
   "targets": {

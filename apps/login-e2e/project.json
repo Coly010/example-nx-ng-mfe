@@ -1,5 +1,4 @@
 {
-  "root": "apps/login-e2e",
   "sourceRoot": "apps/login-e2e/src",
   "projectType": "application",
   "targets": {

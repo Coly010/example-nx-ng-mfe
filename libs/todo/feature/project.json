@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/todo/feature",
   "sourceRoot": "libs/todo/feature/src",
   "prefix": "nx-ng-mfe",
   "targets": {

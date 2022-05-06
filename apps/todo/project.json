@@ -1,6 +1,5 @@
 {
   "projectType": "application",
-  "root": "apps/todo",
   "sourceRoot": "apps/todo/src",
   "prefix": "nx-ng-mfe",
   "targets": {
@@ -72,7 +71,6 @@
         "publicHost": "http://localhost:4201"
       }
     },
-
     "serve-static": {
       "executor": "@nrwl/angular:file-server",
       "defaultConfiguration": "development",

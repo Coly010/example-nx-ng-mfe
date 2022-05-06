@@ -1,6 +1,5 @@
 {
   "projectType": "application",
-  "root": "apps/notes",
   "sourceRoot": "apps/notes/src",
   "prefix": "nx-ng-mfe",
   "targets": {
@@ -72,7 +71,6 @@
         "publicHost": "http://localhost:4202"
       }
     },
-
     "serve-static": {
       "executor": "@nrwl/angular:file-server",
       "defaultConfiguration": "development",

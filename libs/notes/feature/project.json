@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/notes/feature",
   "sourceRoot": "libs/notes/feature/src",
   "prefix": "nx-ng-mfe",
   "targets": {

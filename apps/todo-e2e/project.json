@@ -1,5 +1,4 @@
 {
-  "root": "apps/todo-e2e",
   "sourceRoot": "apps/todo-e2e/src",
   "projectType": "application",
   "targets": {

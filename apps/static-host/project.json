@@ -1,6 +1,5 @@
 {
   "projectType": "application",
-  "root": "apps/static-host",
   "sourceRoot": "apps/static-host/src",
   "prefix": "nx-ng-mfe",
   "targets": {

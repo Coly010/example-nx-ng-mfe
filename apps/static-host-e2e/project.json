@@ -1,5 +1,4 @@
 {
-  "root": "apps/static-host-e2e",
   "sourceRoot": "apps/static-host-e2e/src",
   "projectType": "application",
   "targets": {
